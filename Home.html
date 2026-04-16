@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+  <title>
+
+  </title>  
+    <head>
+      <link rel="stylesheet" href="Home.css">
+      <script src="Home.js"></script>
+    </head>
+    <body>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Navbar</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 15px;
+  color: white;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* MENU */
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #333;
+  top: 40px;
+  min-width: 150px;
+  z-index: 999;
+}
+
+.dropdown-menu a {
+  padding: 10px;
+  z-index: 999;
+}
+
+/* SHOW DROPDOWN */
+.dropdown-menu.show {
+  display: block;
+  z-index: 999;
+}
+
+/* HAMBURGER */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle div {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #222;
+    position: absolute;
+    top: 70px;
+    left: 0;
+  padding-left: 60px;}
+
+  .nav-links.active {
+    display: flex;
+  }
+ .navbar{
+  width: 100%;
+ }
+  .dropdown-menu {
+    position: static;
+    z-index: 999;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/SVG_Logo.svg" class="img1"> My Portfolio</div>
+
+  <!-- Hamburger -->
+  <div class="menu-toggle" id="menu-toggle">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Links -->
+  <ul class="nav-links" id="nav-links">
+    <li><a href="file:///C:/Users/DELL-NB/Desktop/Projects/Home.html"><b class="l1">Home</b></a></li>
+    <li><a href="file:///C:/Users/DELL-NB/Desktop/Projects/About.html">About</a></li>
+
+    <li>
+      <a href="#" id="services">Projects ▼</a>
+      <div class="dropdown-menu" id="dropdown">
+        <a href="https://www.quackit.com/html/templates/download/bootstrap/portfolio-2-column/index.html">Project 1</a>
+        <a href="https://abhishek01168.github.io/done/">Project 2</a>
+        <a href="#">Project 3</a>
+      </div>
+    </li>
+
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<script>
+// MENU TOGGLE
+document.getElementById("menu-toggle").onclick = function () {
+  document.getElementById("nav-links").classList.toggle("active");
+};
+
+// DROPDOWN TOGGLE
+document.getElementById("services").onclick = function (e) {
+  e.preventDefault();
+  document.getElementById("dropdown").classList.toggle("show");
+};
+</script>
+
+
+<!--background image-->
+<div class="bg">
+  <p class="p3"><img src="https://scontent.fdhm1-1.fna.fbcdn.net/v/t39.30808-6/607725904_122156387198932687_7717421324545918065_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=al1OxAD9Q_cQ7kNvwED_O8Z&_nc_oc=Adq-9wtGTY4MRCoUYmrydg8Xn6sJAfGhDT0NMTYF-jTHiP4don-MbVXkX9RaB6mH-V0&_nc_zt=23&_nc_ht=scontent.fdhm1-1.fna&_nc_gid=GQKz6M1gP-ZV7oCorFttSw&_nc_ss=7a389&oh=00_Af2YeyEBPP6QfEPWLPl2ogFgx7mWjB45VVsFj7wI52xZhA&oe=69DD26C8 "class="img2"></p>
+  <h1 class="h1">Hi,I'am Abhishek
+  <br><p class="p1">I am a Passionate web Designer and Developer </p>
+  <p class="p2"><button class="button1">View My Work</button></p></h1><br>
+
+
+  
+</div>
+    </body>
+    
+</html>

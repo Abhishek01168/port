@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 15px 20px;
+  color: white;
+  position: relative;
+}
+
+/* LOGO */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: #333;
+  list-style: none;
+  display: none;
+  min-width: 150px;
+}
+
+.dropdown-menu li a {
+  padding: 10px;
+}
+
+/* SHOW DROPDOWN */
+.dropdown-menu.show {
+  display: block;
+}
+
+/* HAMBURGER */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+}
+.img1{
+    width: 50px;
+}
+
+.l1{
+  color: rgb(126, 126, 254);
+}
+
+.img2{
+  width: 300px;
+  height: 300px;
+margin-left: 270px;
+margin-top: -280px;
+opacity: 100%;
+filter: opacity(0.9);
+
+}
+
+.p2{
+  margin-left: 620px;
+  font-size: 50px;
+
+  
+}
+
+.about-title {
+  padding-left: 550px;
+  font-size: 48px;
+  font-weight: bold;
+  position: relative;
+  margin: 60px 0;
+  color: white;
+}
+
+.about-title span {
+  position: relative;
+  padding: 20px 40px;
+}
+
+/* Top line */
+.about-title span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgb(240, 234, 234);
+}
+
+/* Bottom line */
+.about-title span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgb(243, 241, 241);
+}
+
+/*About me*/
+
+.p2{
+  padding-left: 60px;
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+h6{
+  color: rgb(108, 170, 250);
+}
+
+h5{
+  font-size: 25px;
+  color: white;
+}
+
+.p4{
+  font-size: 20px;
+  color: white;
+
+}
+
+.btn1{
+  padding: 5px;
+  margin-right: 15px;
+  margin-bottom: px;
+  margin-top: 12px;
+  
+}
+
+.btn1:hover{
+background-color: rgba(96, 176, 246, 0.782);
+}
+
+
+.p5{
+  font-size: 20px;
+  margin-left: 10%;
+  color: white;
+}
+
+.p6{
+  color: rgba(39, 109, 126, 0.981);
+  font-size: 30px;
+  margin-left: 150px;
+}
+
+.p7{
+  margin-left: 150px;
+}
+
+.p8{
+  margin-top: -85px;
+  margin-left: 400px;
+  color: rgba(39, 109, 126, 0.981);
+  font-size: 30px;
+}
+
+.p9{
+  
+  margin-left: 400px;
+}
+
+.p10{
+  margin-top: -80px;
+  margin-left: 650px;
+  color: rgba(39, 109, 126, 0.981);
+  font-size: 30px;
+}
+
+.p11{
+  
+  margin-left: 650px;
+}
+
+
+
+.bg{
+  
+  background-image: url("https://img.freepik.com/premium-vector/geometric-dark-message-board-wallpaper-with-copy-space-modern-designs_796268-137.jpg");
+  background-size: cover;        /* fills entire div */
+ 
+}
+
+/* MOBILE */
+@media (max-width:100px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #222;
+    flex-direction: column;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+  }
+
+  .dropdown-menu {
+    position: static;
+  }
+ 
+}
+
+@media (max-width: 768px) {
+
+  .img2{
+    width: 300px;
+    margin-left:62%;
+    margin-top: 40px;
+  }
+
+  .a1{
+    text-align: left;
+    margin-left: -130%;
+  }
+
+  .p2{
+    margin-left: 500px;
+  }
+}
+ 
+li{
+  padding-right: 60px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+
+}
+li:hover{
+  transform: scale(1.1); /* increases size */
+}
+
+
+
+  
+  
+
+
+  
